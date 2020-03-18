@@ -161,7 +161,7 @@ media quaries
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .masonry #articles{
+    .masonry .articles{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
