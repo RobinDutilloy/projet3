@@ -1,0 +1,207 @@
+/*!
+ *feuilles de style principale
+ *Auteur: Robin Dutilloy
+ *Github: https://
+ *
+ *Ce projet repose sur un convention d'écriture BEM (voir : )
+ */
+
+/*
+reset
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ réglages typographiques
+*/
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+.bandeau{
+  color: white;
+}
+.police{
+  font: 400;
+  color: white;
+}
+/*
+layout
+*/
+
+.container {
+    max-width: 1310px;
+    padding-left: 50px;
+    padding-left: 50px;
+    margin: auto;
+}
+
+.bandeau,
+.section,
+.footer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+}
+
+header{
+    background-color: #0f5e2b;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo{
+    
+    margin-left: 5%;
+}
+
+
+.nav-toggler:hover ~ .nav-main {
+    transform: translateX(0);
+}
+
+
+.image_de_fond{
+    width: 120% ;
+}
+
+.image_de_profil{
+    width: 100%;
+    transform: rotate(90deg);
+    margin-top: 20%;
+}
+
+#text{
+    margin: 10%;
+    padding-top: 5%;
+    
+    
+}
+
+.footer{
+    background-color: #2c3233;
+    color: white;
+}
+
+.footer
+.container{
+  color: white;
+}
+/*
+composants
+*/
+
+.navbar__menu{
+  margin: 0;
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.navbar__link{
+  padding: 1em;
+  color: #fff;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+#title>h1{
+    text-align: center;
+    font-size: 1.6em;
+    
+}
+
+.image_de_fond{
+    position: relative;
+    width: 100%;
+}
+
+.div {
+    position: absolute;
+    top: 0;
+}
+
+.grid{
+    margin-top: auto;
+}
+
+/*
+styles de pages 
+*/
+
+/*
+utilitaires
+*/
+img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.moncv{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+media quaries
+*/
+
+@media screen and (min-width: 940px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .masonry #articles{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .image_de_profil{
+        width: 110%;
+        margin-top: 35%;
+    }
+
+}
+
+@media screen and (min-width: 590px) {
+    #title>h1{
+        text-align: center;
+        font-size: 3em;
+        
+    }
+    
+    .logo{
+      width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+  .navbar__link{
+    font-size: 90%;    
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .navbar__link{
+    font-size: 60%;    
+  }
+}
+/*mobile
+*/
+
+/* desktop
+*/
+
+
+
