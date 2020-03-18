@@ -1,5 +1,4 @@
-/*!
- *feuilles de style principale
+/*feuilles de style principale
  *Auteur: Robin Dutilloy
  *Github: https://
  *
@@ -19,6 +18,7 @@ body{
 /*
  réglages typographiques
 */
+
 body{
     font-family: "Open Sans", sans-serif;
 }
@@ -30,6 +30,7 @@ body{
   font: 400;
   color: white;
 }
+
 /*
 layout
 */
@@ -134,10 +135,6 @@ composants
 }
 
 /*
-styles de pages 
-*/
-
-/*
 utilitaires
 */
 img{
@@ -197,6 +194,7 @@ media quaries
     font-size: 60%;    
   }
 }
+
 /*mobile
 */
 
